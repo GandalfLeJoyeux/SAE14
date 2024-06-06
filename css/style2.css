@@ -1,0 +1,258 @@
+/* Mise en place du background. */
+.container {  display: grid;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/background2.png");
+  }
+
+/* Mise en place du grid merci grid.layoutit.com. */
+.container {  display: grid;
+    grid-template-columns: 0.2fr 2.1fr 0.2fr;
+    grid-template-rows: 0.5fr 9fr 0.3fr;
+    gap: 0.25em 0.25em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Top Top Top"
+      "vide1 principal vide2"
+      "Bottom Bottom Bottom";
+}
+
+/*--------------------------------------------------------------Principal-----------------------------------------------------------------------*/
+
+.principal {
+    display: grid; 
+    grid-template-columns: 1.5fr 1fr; 
+    grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr; 
+    gap: 1.5em 1.5em; 
+    grid-template-areas: 
+      "Titre Titre"
+      "Texte1 Image1"
+      "Texte2 Image2"
+      "Texte3 Image3"
+      "Texte4 Image4"
+      "Texte5 Image5"
+      "Texte6 Image6"
+      "Texte7 Image7"; 
+    grid-area: principal; 
+}
+
+/*--------------------------------------------------------------Textes-----------------------------------------------------------------------*/
+
+.Texte1 { grid-area: Texte1;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.Texte2 { grid-area: Texte2;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #333;
+
+}
+
+.Texte3 { grid-area: Texte3;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #333;
+
+}
+
+.Texte4 { grid-area: Texte4;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #333;
+
+}
+
+.Texte5 { grid-area: Texte5;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #333;
+
+}
+
+.Texte6 { grid-area: Texte6;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #333;
+
+}
+
+.Texte7 { grid-area: Texte7;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #333;
+
+}
+
+/*--------------------------------------------------------------Images-----------------------------------------------------------------------*/
+
+.Image1 { grid-area: Image1;
+    overflow: hidden;
+    border: 3mm ridge #454545;
+}
+.Image1 img{ box-sizing: border-box;
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+/*--------------------------*/
+
+.Image2 { grid-area: Image2;
+    overflow: hidden;
+    border: 3mm ridge #454545;
+}
+.Image2 img{ box-sizing: border-box;
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+/*--------------------------*/
+
+.Image3 { grid-area: Image3;
+    overflow: hidden;
+    border: 3mm ridge #454545;
+}
+.Image3 img{ box-sizing: border-box;
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+/*--------------------------*/
+
+.Image4 { grid-area: Image4;
+    overflow: hidden;
+    border: 3mm ridge #454545;
+}
+.Image4 img{ box-sizing: border-box;
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+/*--------------------------*/
+
+.Image5 { grid-area: Image5;
+    overflow: hidden;
+    border: 3mm ridge #454545;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url("img/texturevieux.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.Image5 img{ box-sizing: border-box;
+    object-fit: contain;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+/*--------------------------*/
+
+.Image6 { grid-area: Image6;
+    overflow: hidden;
+    border: 3mm ridge #454545;
+}
+.Image6 img{ box-sizing: border-box;
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+/*--------------------------*/
+
+.Image7 { grid-area: Image7;
+    overflow: hidden;
+    border: 3mm ridge #454545;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url("img/texturevieux.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.Image7 img{ box-sizing: border-box;
+    object-fit: contain;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+/*-------------------------------------------------------------MEDIA-----------------------------------------------------------------------*/
+
+@media(max-width: 800px){
+
+.container {  display: grid;
+    grid-template-columns: 0.2fr 2.1fr 0.2fr;
+    grid-template-rows: 0.5fr 10fr 0.3fr;
+    gap: 0.25em 0.25em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Top Top Top"
+      "vide1 principal vide2"
+      "Bottom Bottom Bottom";
+}
+
+.principal {
+    display: grid; 
+    grid-template-columns: 2fr; 
+    grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr; 
+    gap: 0.5em 0.5em; 
+    grid-template-areas: 
+      "Titre"
+      "Texte1"
+      "Image1"
+      "Texte2"
+      "Image2"
+      "Texte3"
+      "Image3"
+      "Texte4"
+      "Image4"
+      "Texte5"
+      "Image5"
+      "Texte6"
+      "Image6"
+      "Texte7"
+      "Image7";
+    grid-area: principal; 
+}
+.Image3 { grid-area: Image3;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url("img/texturevieux.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Image3 img{ box-sizing: border-box;
+    object-fit: contain;
+}
+
+
+}
+
+
+  

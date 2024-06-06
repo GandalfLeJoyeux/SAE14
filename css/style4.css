@@ -1,0 +1,382 @@
+.container {  display: grid;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/background4.png");
+}
+
+/* Mise en place du grid merci grid.layoutit.com. */
+.container {  display: grid;
+    grid-template-columns: 0.5fr 2.5fr 0.5fr;
+    grid-template-rows: 0.3fr 15fr 0.3fr;
+    gap: 0.25em 0.25em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Top Top Top"
+      "vide1 principal vide2"
+      "Bottom Bottom Bottom";
+}
+
+/*--------------------------------------------------------------Principal-----------------------------------------------------------------------*/
+
+.principal {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5em 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+  gap: 2em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Titre"
+    "Zone1"
+    "Zone2"
+    "Zone3"
+    "Zone4"
+    "Zone5"
+    "Zone6"
+    "Zone7"
+    "Zone8";
+  grid-area: principal;
+}
+
+/*--------------------------*/
+
+.Zone1 {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows:1fr 1fr 0.2fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Image1 Image1 Image1"
+    "Image1 Image1 Image1"
+    "Texte1 Texte1 Texte1"; 
+  grid-area: Zone1;
+  border: 5px solid #454545;
+}
+.Image1 { grid-area: Image1;
+  overflow: hidden;
+}
+.Image1 img{ box-sizing: border-box;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.Texte1 { grid-area: Texte1;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+
+}
+
+/*--------------------------*/
+
+.Zone2 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Image2 Image2 Image2"
+    "Image2 Image2 Image2"
+    "Texte2 Texte2 Texte2";
+  grid-area: Zone2;
+  border: 5px solid #454545;
+}
+  
+.Image2 { grid-area: Image2;
+  overflow: hidden;
+}
+.Image2 img{ box-sizing: border-box;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+  
+.Texte2 { grid-area: Texte2; 
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+}
+
+/*--------------------------*/
+
+.Zone3 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Image3 Image3 Image3"
+    "Image3 Image3 Image3"
+    "Texte3 Texte3 Texte3";
+  grid-area: Zone3;
+  border: 5px solid #454545;
+}
+  
+.Image3 { grid-area: Image3;
+  overflow: hidden;
+}
+.Image3 img{ box-sizing: border-box;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.Texte3 { grid-area: Texte3; 
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+}
+
+/*--------------------------*/
+
+  .Zone4 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Image4 Image4 Image4"
+    "Image4 Image4 Image4"
+    "Texte4 Texte4 Texte4";
+  grid-area: Zone4;
+  border: 5px solid #454545;
+}
+  
+.Image4 { grid-area: Image4; 
+  overflow: hidden;
+}
+.Image4 img{ box-sizing: border-box;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.Texte4 { grid-area: Texte4; 
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+}
+
+/*--------------------------*/
+
+.Zone5 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Image5 Image5 Image5"
+    "Image5 Image5 Image5"
+    "Texte5 Texte5 Texte5";
+  grid-area: Zone5;
+  border: 5px solid #454545;
+}
+  
+.Image5 { grid-area: Image5; 
+  overflow: hidden;
+}
+.Image5 img{ box-sizing: border-box;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.Texte5 { grid-area: Texte5; 
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+}
+
+/*--------------------------*/
+
+.Zone6 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Image6 Image6 Image6"
+    "Image6 Image6 Image6"
+    "Texte6 Texte6 Texte6";
+  grid-area: Zone6;
+  border: 5px solid #454545;
+}
+  
+.Image6 { grid-area: Image6; 
+  overflow: hidden;
+}
+.Image6 img{ box-sizing: border-box;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.Texte6 { grid-area: Texte6; 
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+}
+
+/*--------------------------*/
+
+.Zone7 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Image7 Image7 Image7"
+    "Image7 Image7 Image7"
+    "Texte7 Texte7 Texte7";
+  grid-area: Zone7;
+  border: 5px solid #454545;
+}
+  
+.Image7 { grid-area: Image7; 
+  overflow: hidden;
+}
+.Image7 img{ box-sizing: border-box;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}  
+.Texte7 { grid-area: Texte7; 
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+}
+
+/*--------------------------*/
+
+.Zone8 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Image8 Image8 Image8"
+    "Image8 Image8 Image8"
+    "Texte8 Texte8 Texte8";
+  grid-area: Zone8;
+  border: 5px solid #454545;
+}
+  
+.Image8 { grid-area: Image8; 
+  overflow: hidden;
+}
+.Image8 img{ box-sizing: border-box;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+} 
+.Texte8 { grid-area: Texte8; 
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+}
+  
+/*-------------------------------------------------------------MEDIA-----------------------------------------------------------------------*/
+
+@media(max-width: 800px){
+
+.container {  display: grid;
+    grid-template-columns: 0.5fr 2.5fr 0.5fr;
+    grid-template-rows: 0.3fr 9.0fr 0.3fr;
+    gap: 0.25em 0.25em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Top Top Top"
+      "vide1 principal vide2"
+      "Bottom Bottom Bottom";
+}
+.Zone1 {
+  display: grid; 
+  grid-template-rows:auto auto auto; 
+}
+.Zone2 {
+  display: grid; 
+  grid-template-rows:auto auto auto; 
+}
+.Zone3 {
+  display: grid; 
+  grid-template-rows:auto auto auto; 
+}
+.Zone4 {
+  display: grid; 
+  grid-template-rows:auto auto auto; 
+}
+.Zone5 {
+  display: grid; 
+  grid-template-rows:auto auto auto; 
+}
+.Zone6 {
+  display: grid; 
+  grid-template-rows:auto auto auto; 
+}
+.Zone7 {
+  display: grid; 
+  grid-template-rows:auto auto auto; 
+}
+.Zone8 {
+  display: grid; 
+  grid-template-rows:auto auto auto; 
+}
+.principal {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5em 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+  gap: 2em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Titre"
+    "Zone1"
+    "Zone2"
+    "Zone3"
+    "Zone4"
+    "Zone5"
+    "Zone6"
+    "Zone7"
+    "Zone8";
+  grid-area: principal;
+}
+
+}

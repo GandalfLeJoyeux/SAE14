@@ -1,0 +1,55 @@
+Conception Caractéristique & Engagement
+
+(intro)
+Après la Seconde Guerre mondiale, l'engouement s'est rapidement porté sur les avancées des ingénieurs allemands, qui avaient pris de l'avance en mettant en service le premier chasseur à réaction, le Messerschmitt 262. Rapidement, les Britanniques, les Américains, puis les Russes ont rejoint la course avec leurs Gloster Meteor, Vampire, F-80, F-84 et MiG-15. À ce moment-là, l'idée que les Français puissent jouer un rôle n'effleurait plus l'esprit de personne.
+
+
+Marcel Dassault, dans son intérêt pour les avions de combat à réaction, saisit une opportunité sans succomber à des ambitions déraisonnables, comme le souligne l'article de Luc Berger. Convaincu que les prototypes nationaux sont trop lourds, il obtient du ministère de l'Air la possibilité de participer au concours d'avions de chasse d'interception. Conscient que les performances requises dépassent les capacités du réacteur Nene, Dassault entame des discussions avec l'état-major de l'armée de l'air.
+
+/* démarquation */
+
+
+(Conception)
+
+Dès octobre 1947, avec comme seuls moyens quelques planches à dessin et la règle à calcul, Jean Béziaud, Georges Poullain et Henri Jacquignon commencent à travailler. Réutilisant les standards des avions Marcel Bloch de la période 1936-1940 et profitant de l’expérience acquise sur les chasseurs de la famille mb 150 et ses dérivés, la petite équipe Dassault conçoit une cellule aussi simple que possible : un petit avion, léger, peu cher, aussi performant que le moteur le permettra.
+En novembre 1947, Marcel Dassault embauche Jean Cabrière (futur directeur général technique) et lui confie le projet d’ensemble de l’Ouragan : « On va faire l’avion que l’on peut faire autour d’un réacteur Nene et quatre canons de 20 mm »
+Dix-huit mois après le début du projet, le premier prototype de l'Ouragan est achevé. Le 22 janvier 1949, il est transféré de St Cloud à Melun, et le 28 février 1949, piloté par Kostia Rozanoff à Melun-Villaroche, il effectue son premier vol. Les performances sont prometteuses avec le réacteur Rolls Royce Nene 102, permettant à l'avion d'atteindre 980 km/h et un taux de montée initial de 43 m/s. Cependant, le prototype n'est pas encore représentatif des avions de série, car son cockpit n'est pas pressurisé, il n'est pas armé, et les bidons de bout d'ailes caractéristiques de l'Ouragan ne sont pas encore présents (introduits en décembre 1949). L'avion non équipé a des difficultés à effectuer des virages très serrés.
+
+/* Dassault_Ouragan_schéma.png / Vues_Densemble.jpg */
+
+(Série)
+Le premier Ouragan de série vole à Mérignac le 20 décembre 1951, piloté par Kostia Rozanoff, il fut livré le 30/01/1952. La fabrication en série de l’Ouragan est répartie entre Dassault et les sociétés nationales de constructions aéronautiques pour lesquelles l’État fixe lui-même les prix de fabrication :
+la SNCASE à Toulouse pour la partie avant du fuselage, la SNCASO à Saint Nazaire pour le fuselage arrière et la SNCASO à Nantes-Bouguenais pour la voilure. De son côté, la société Dassault assure celle des empennages à Saint-Cloud, puis à Argenteuil, et celle des éléments mobiles à Talence. L’assemblage se fait à Mérignac sur une chaîne de montage parallèle à celle des Flamant.
+La production se termine le 16/07/1954 avec la livraison du dernier avion à l'inde.
+
+/* VIDEO */
+
+(Utilisation)
+L'Ouragan est utilisé par 4 pays à travers le monde, la France (150), l'Inde (104), Israël (70) et le Salvador(18 Israélien d'occasion).
+Les Ouragan israéliens connaissent l'épreuve du feu lors de la campagne de Suez en octobre 1956. Pendant la Guerre des six jours, une quarantaine d'avions seront mis en ligne et remporteront des succès considérables dans des missions d'attaque au sol.
+Les Ouragan indiens participeront aux opérations aériennes de la Guerre sino-indienne de 1962.
+Au Salvador, les Ouragan participent à la lutte contre la guérilla et remportent la seule victoire aérienne de la guerre civile de ce pays en 1981. Six d'entre eux sont détruits au sol lors d'une attaque contre leur base en 1982.
+Il sera aussi utilisé pour quelques mission de maintien de l'ordre en Algérie.
+L'Ouragan laissera toutefois un souvenir mitigé pour ce qui concerne son utilisation opérationnelle, de trop nombreux problèmes techniques sont apparus, notamment des criques sur les verrières limitant l'altitude à 20.000 pieds"
+
+
+(Points forts/Points faibles)
+*Robuste et fiable, demandant peu d'entretien.
+*Équipé de 4 canons de 20 mm plus efficaces que les 12,7 mm des avions américains, utilisé avec succès par les Israéliens.
+*Plateforme de tir stable.
+*Aérofreins bien conçus, ne modifiant pas la trajectoire de l'avion et pouvant être utilisés de manière sélective.
+*Démarrage du réacteur automatisé et sécurisé grâce à un programmateur.
+--------
+*Avion dépassé en 1954, sans servo-commande, même aux ailerons.
+*Vitesse maximale insuffisante pour rattraper des avions plus rapides tels que le T-33 et le F-84G.
+*Commandes lourdes, taux de roulis inférieur, système de profondeur rendant les manœuvres difficiles.
+*Perte de maniabilité et de performances au-dessus de 20 000 pieds, utilisé davantage comme avion d'attaque au sol que comme chasseur.
+*Autonomie de vol opérationnelle ridicule par rapport aux avions américains.
+*Train d'atterrissage étroit, limitant les opérations par vent de travers supérieur à 35 km/h.
+*Aérofreins susceptibles de s'ouvrir involontairement au-dessus de 25 000 pieds, entraînant une augmentation de la consommation de carburant.
+*Habitacle petit et inconfortable.
+*Climatisation difficile à régler, offrant rarement la température idéale.
+
+(témoignage)
+Malgré ses imperfections, l’Ouragan, premier avion à réaction français de série, possède de solides qualités : rusticité, robustesse, bonne stabilité pour le tir, excellentes qualités de vol à basse altitude. Les utilisateurs ont surtout apprécié ses qualités d’appareil d’attaque au sol, qu’il a démontrées en particulier durant la guerre israélo-arabe de 1956. À l’issue des combats, le commandant en chef de l’aviation israélienne a déclaré : « L’Ouragan était un bien meilleur avion que nous ne l’avions supposé. »
+Après leur service opérationnel, peu d'Ouragan ont été préservés. Certains ont été utilisés comme avions d'entraînement par les services d'incendie des différentes bases, d'autres ont été démantelés, tandis que certains ont fait office de sujets d'expérimentation lors des essais nucléaires dans le Sahara, permettant d'étudier les effets d'une explosion sur des appareils plus ou moins abrités.

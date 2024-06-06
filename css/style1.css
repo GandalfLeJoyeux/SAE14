@@ -1,0 +1,114 @@
+/* Mise en place du background. */
+.container {  display: grid;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2)),url("img/background.png");
+}
+
+/* Mise en place du grid merci grid.layoutit.com. */
+.container {  display: grid;
+  grid-template-columns: 0.2fr 2.1fr 0.2fr;
+  grid-template-rows: 0.5fr 3fr 0.3fr;
+  gap: 0.25em 0.25em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Top Top Top"
+    "vide1 principal vide2"
+    "Bottom Bottom Bottom";
+}
+
+/*--------------------------------------------------------------Principal-----------------------------------------------------------------------*/
+
+/* Mise en place du grid pour le contenu de la page. */
+.principal {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1.4fr 1.4fr;
+  gap: 1.5em 1.5em ;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Titre Titre"
+    "Texte1 Image1"
+    "Image2 Texte2";
+  grid-area: principal;
+}
+
+/* Textes plus faciles à lire avec une ombre, des interlignes de 1.5, alignement des cotés gauche et droite ainsi qu'une taille de police de 20px.  */
+.Texte1 { grid-area: Texte1;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: justify;
+  text-shadow: 1px 1px 2px #333
+}
+.Texte2 { grid-area: Texte2;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: justify;
+  text-shadow: 1px 1px 2px #333;
+}
+
+/* Mise en page des images, on n'affiche pas tout ce qui dépasse de son élément, chaque image occupe tout l'espace disponible et est centrée.  */
+.Image1 { grid-area: Image1;
+  overflow: hidden;
+}
+.Image1 img{ box-sizing: border-box;
+  object-fit: contain;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.Image2 { grid-area: Image2;
+  overflow: hidden;
+}
+.Image2 img{ box-sizing: border-box;
+  object-fit: contain;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+  }
+
+/*--------------------------------------------------------------MEDIA-----------------------------------------------------------------------*/
+
+@media(max-width: 800px){
+
+.container {  display: grid;
+  grid-template-columns: 0.2fr 5fr 0.2fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  gap: 0.1em 0.1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Top Top Top"
+    "vide1 principal vide2"
+    "Bottom Bottom Bottom";
+}
+
+.principal {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 0.4fr 1fr 0.4fr;
+  gap: 0.5em 0.5em ;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Titre"
+    "Texte1"
+    "Image1"
+    "Texte2"
+    "Image2";
+  grid-area: principal;
+}
+
+.Texte1 { grid-area: Texte1;
+  font-size: 15px;
+  text-align: center;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+}
+.Texte2 { grid-area: Texte2;
+  font-size: 15px;
+  text-align: center;
+  background:linear-gradient(rgba(51, 51, 51, 0.6), rgba(255, 255, 255, 0.3));
+  border: 4mm ridge gray;
+}
+
+}

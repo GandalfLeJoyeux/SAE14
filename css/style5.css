@@ -1,0 +1,41 @@
+/* Mise en place du background pour qu'il soit fixe dans le fond, facile de lire par dessus, prenne toute la place et ne bouge pas lorsqu'on défile. */
+.container {  display: grid;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("img/texturevieux.png");
+  }
+  
+  /* Mise en place du grid merci grid.layoutit.com. */
+  .container {  display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 0.3fr;
+    gap: 0.25em 0.25em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Top Top Top"
+      "vide1 principal vide2"
+      "Bottom Bottom Bottom";
+  }
+
+.principal {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 1.5em 1.5em ;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Titre"
+    "Texte1";
+  grid-area: principal;
+}
+  
+
+/* Aligne la liste des sources au centre de la page */
+.Texte1 ul{box-sizing: border-box;
+    display: table;
+    margin: 0 auto;}
+  
+/*-------------------------------------------------------------MEDIA-----------------------------------------------------------------------*/
+
+@media(max-width: 800px){
+
+
+
+}

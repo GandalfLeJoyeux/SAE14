@@ -1,0 +1,145 @@
+/* Avant de corriger, le projet était sympa à faire merci 👍, mais je ne suis pas content de mon media queries 😢💔
+sinon à part ça tout est beau vous pouvez mettre 17-18/20 directement pas besoin de vous embêter avec la correction 😁 */
+
+
+/*!!! Feuille de style commune à tous. !!!*/
+/*1280*720*/
+
+/* Permet de bien dimensionner la page pour éviter l'apparition de bande blanche. */
+html, body {
+	margin: 0;
+	padding: 0;
+    height: 100%;
+}
+
+/* Importation de la police d'écriture */
+@font-face {
+    font-family: 'fontstyle';
+    src: url('other/OldNewspaperTypes.ttf');
+}
+
+/* s'occupe des options du background et de la police d'écriture */
+.container {  display: grid;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+    font-family: "fontstyle";
+}
+
+/*--------------------------------------------------------------Footer-----------------------------------------------------------------------*/
+
+/* Footer fixé en bas de la page peu importe le défilement plus quelques éléments de style. */
+.Bottom { grid-area: Bottom; 
+    background-color: #1f1f1f;
+    color: #999;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------Header-----------------------------------------------------------------------*/
+
+/* Mise en place du grid pour le menu et le logo */
+.Top {  display: grid;
+    grid-template-columns: 0.4fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Top;
+}
+
+/* Logo centré dans sa grille, de 170px de haut et de largeur auto pour les proportions. */
+.Logo { grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    width: fit-content ;
+    place-items: center;
+}
+.Logo img{
+    width: auto;
+    height:170px;
+    padding: 1em;
+}
+  
+  
+/* Gestion du menu */
+.Menu { grid-area: 1 / 1 / 2 / 3;
+    margin: 3.5em;
+    text-align: center ;
+}
+  
+/* Change l'apparence du menu */
+.Menu a {
+    margin: 0.3em;
+    color: #1b2025;
+    text-align: center;
+    padding: 0.6em 0.7em;
+    text-decoration: none;
+    font-size: 1.5em;
+    box-shadow:  0 0 15px rgba(0,0,0,0.2);
+}
+  
+/* Met en surbrillance les liens survolés */
+.Menu a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+  
+/* Change l'apparence du lien actif */
+.Menu a.active {
+    background-color: #aeb6bf;
+    color: white;
+}
+
+
+/*--------------------------------------------------------------Principal-----------------------------------------------------------------------*/
+
+/* Apparence des liens <a></a> */
+p a{
+    color: #1B4F72;
+    font-style: italic;
+}
+
+/* Titre au centre de son élément plus une ombre pour avoir plus de contraste avec le background */
+.Titre { grid-area: Titre;
+    text-align: center;
+    color: #000000;
+    text-shadow: 3px 2px 3px #333;
+    text-decoration: underline;
+    margin: 0;
+}
+
+/* Vide des deux côtés de la div principal */
+.vide1 { grid-area: vide1; }
+.vide2 { grid-area: vide2; }
+
+/*--------------------------------------------------------------MEDIA-----------------------------------------------------------------------*/
+
+@media(max-width: 800px){
+
+/* Mise en place du grid pour le menu et le logo */
+.Top {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Menu";
+    grid-area: Top; 
+  }
+
+/* Logo centré dans sa grille, de 170px de haut et de largeur auto pour les proportions. */
+.Logo { grid-area: Logo;
+    width: fit-content ;
+    place-items: center;
+    visibility: hidden;
+}
+
+p, ul{
+    font-size: 15px;
+}
+
+}
